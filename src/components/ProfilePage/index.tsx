@@ -20,7 +20,7 @@ const ProfilePage: React.FC = () => {
     <Container>
       <Banner>
         <Avatar>
-          <img src={ProfileImg}/>
+          <img src={ProfileImg} alt="Perfil"/>
         </Avatar>
       </Banner>
 

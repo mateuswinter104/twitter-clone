@@ -30,7 +30,7 @@ const Tweet: React.FC = () => {
 
       <Body>
       <Avatar>
-          <img src={RocketseatLogo} alt=""/>
+          <img src={RocketseatLogo} alt="Rocketseat"/>
         </Avatar>
 
         <Content>
@@ -45,7 +45,7 @@ const Tweet: React.FC = () => {
           <Description>Foguete não tem ré 🚀</Description>
 
           <ImageContent>
-            <img src={RocketseatLogo} alt=""/>
+            <img src={RocketseatLogo} alt="Rocketseat"/>
           </ImageContent>
 
           <Icons>

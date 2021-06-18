@@ -54,13 +54,13 @@ const MenuBar: React.FC = () => {
 
         <Button>
           <span>Tweetar</span>
-          <img src={Twitter} alt=""/>
+          <img src={Twitter} alt="Twitter"/>
         </Button>
       </Topside>
 
       <Botside>
         <Avatar>
-          <img src={ProfileImg} alt=""/>
+          <img src={ProfileImg} alt="Perfil"/>
         </Avatar>
 
         <ProfileData>
