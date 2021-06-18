@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { Chat, Rocketseat, Favorite } from '../../styles/Icons';
+import { Chat, Twitter, Favorite } from '../../styles/Icons';
 
 export const Container = styled.div`
   display: flex;
@@ -11,6 +11,12 @@ export const Container = styled.div`
   border-bottom: 1px solid var(--outline);
 
   max-width: 100%;
+
+  @media (max-width: 500px) {
+    &:last-child{
+    margin-bottom: 46px;
+  }
+  }
 `;
 
 export const Retweeted = styled.div`
@@ -20,7 +26,7 @@ export const Retweeted = styled.div`
   font-size: 13px;
   color: var(--gray);
 `;
-export const RocketseatIcon = styled(Rocketseat)`
+export const TwitterIcon = styled(Twitter)`
   width: 16px;
   height: 16px;
 
@@ -40,15 +46,17 @@ export const Body = styled.div`
 `;
 
 export const Avatar = styled.div`
-  width: 49px;
-  height: 49px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: var(--gray);
+  > img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
 
-  position: absolute;
-  top: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 `;
 export const Content = styled.div`
   display: flex;
@@ -95,16 +103,20 @@ export const Description = styled.p`
 `;
 
 export const ImageContent = styled.div`
-  margin-top: 12px;
-  width: 100%;
-  height: min(285px, max(175px, 41vw));
+  > img {
+    margin-top: 12px;
+    width: 100%;
+    height: min(285px, max(175px, 41vw));
 
-  background: var(--outline);
-  border-radius: 14px;
+    background: var(--outline);
+    border-radius: 14px;
 
-  cursor: pointer;
-  &:hover {
-    opacity: 0.7;
+    object-fit: cover;
+
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 `;
 
@@ -170,7 +182,7 @@ export const CommentIcon = styled(Chat)`
   ${iconCSS}
 `;
 
-export const RetweetIcon = styled(Rocketseat)`
+export const RetweetIcon = styled(Twitter)`
   ${iconCSS}
 `;
 

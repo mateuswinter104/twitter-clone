@@ -7,7 +7,7 @@ import {
   FavoriteBorder,
   Person,
   ExitToApp,
-  Rocketseat,
+  Twitter,
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -39,7 +39,7 @@ export const Topside = styled.div`
   }
 `;
 
-export const Logo = styled(Rocketseat)`
+export const Logo = styled(Twitter)`
   width: 41px;
   height: 41px;
 
@@ -71,7 +71,7 @@ export const MenuButton = styled.button`
     padding-right: 15px;
   }
 
-  padding: 8.25px 0;
+  padding: 8.25px 10px;
   outline: 0;
 
   & + button {
@@ -79,6 +79,10 @@ export const MenuButton = styled.button`
   }
 
   & + button:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     margin-top: 33px;
 
     width: 40px;
@@ -88,12 +92,21 @@ export const MenuButton = styled.button`
       display: none;
     }
 
+    > img {
+      display: block;
+      width: 23px;
+      height: 23px;
+    }
+
     @media (min-width: 1280px) {
       width: 100%;
       height: unset;
 
       > span {
         display: inline;
+      }
+      > img {
+      display: none;
       }
     }
   }
@@ -147,13 +160,16 @@ export const Botside = styled.div`
 `;
 
 export const Avatar = styled.div`
-  width: 39px;
-  height: 39px;
+  > img {
+    width: 39px;
+    height: 39px;
 
-  flex-shrink: 0;
+    flex-shrink: 0;
 
-  border-radius: 50%;
-  background: var(--gray);
+    border-radius: 50%;
+
+    object-fit: cover;
+  }
 `;
 
 export const ProfileData = styled.div`

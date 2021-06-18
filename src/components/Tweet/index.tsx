@@ -1,9 +1,11 @@
 import React from 'react';
 
+import RocketseatLogo from '../../assets/rocketseat.jpg';
+
 import {
   Container,
   Retweeted,
-  RocketseatIcon,
+  TwitterIcon,
   Body,
   Avatar,
   Content,
@@ -22,12 +24,14 @@ const Tweet: React.FC = () => {
   return (
     <Container>
       <Retweeted>
-        <RocketseatIcon />
+        <TwitterIcon />
         Você retweetou
       </Retweeted>
 
       <Body>
-        <Avatar />
+      <Avatar>
+          <img src={RocketseatLogo} alt=""/>
+        </Avatar>
 
         <Content>
           <Header>
@@ -40,7 +44,9 @@ const Tweet: React.FC = () => {
           {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
           <Description>Foguete não tem ré 🚀</Description>
 
-          <ImageContent />
+          <ImageContent>
+            <img src={RocketseatLogo} alt=""/>
+          </ImageContent>
 
           <Icons>
             <Status>

@@ -18,6 +18,10 @@ export default styled.button<Props>`
   cursor: pointer;
   outline: 0;
 
+  @media (max-width: 1280px) {
+    
+  }
+
   &:hover {
     background: ${(props) =>
       props.outlined

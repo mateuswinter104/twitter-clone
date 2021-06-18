@@ -4,6 +4,8 @@ import StickyBox from 'react-sticky-box';
 import List from '../List';
 import FollowSuggestion from '../FollowSuggestion';
 import News from '../News';
+import RocketseatLogo from '../../assets/rocketseat.jpg';
+import RodzLogo from '../../assets/rodz.jpg';
 
 import {
   Container,
@@ -27,13 +29,15 @@ const SideBar: React.FC = () => {
             title="Talvez você curta"
             elements={[
               <FollowSuggestion
-                name="Luiz Batanero"
-                nickname="@luizbatanero"
+                name="Rocketseat"
+                nickname="@rocketseat"
+                image={RocketseatLogo}
               />,
-              <FollowSuggestion name="Luke Morales" nickname="@lukemorales" />,
+            
               <FollowSuggestion
-                name="Camila Magalhães"
-                nickname="@camilaamgl"
+                name="Guilherme Rodz"
+                nickname="@guilherme_rodz"
+                image={RodzLogo}
               />,
             ]}
           />

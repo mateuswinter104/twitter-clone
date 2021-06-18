@@ -2,6 +2,9 @@ import React from 'react';
 
 import Button from '../Button';
 
+import ProfileImg from '../../assets/profilePicture.jpeg';
+import Twitter from '../../assets/twitterWhite.png';
+
 import {
   Container,
   Topside,
@@ -51,15 +54,18 @@ const MenuBar: React.FC = () => {
 
         <Button>
           <span>Tweetar</span>
+          <img src={Twitter} alt=""/>
         </Button>
       </Topside>
 
       <Botside>
-        <Avatar />
+        <Avatar>
+          <img src={ProfileImg} alt=""/>
+        </Avatar>
 
         <ProfileData>
-          <strong>Guilherme Rodz</strong>
-          <span>@guilherme_rodz</span>
+          <strong>Mateus Winter</strong>
+          <span>@winter_mateus</span>
         </ProfileData>
 
         <ExitIcon />

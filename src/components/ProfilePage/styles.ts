@@ -28,16 +28,22 @@ export const Banner = styled.div`
 `;
 
 export const Avatar = styled.div`
-  width: max(45px, min(135px, 22vw));
-  height: max(45px, min(135px, 22vw));
+  
+  > img {
+    width: max(45px, min(135px, 22vw));
+    height: max(45px, min(135px, 22vw));
 
-  border: 3.75px solid var(--primary);
-  background: var(--gray);
-  border-radius: 50%;
+    border: 3px solid var(--primary);
+    
+    border-radius: 50%;
 
-  position: absolute;
-  bottom: max(-60px, -10vw);
-  left: 15px;
+    position: absolute;
+
+    bottom: max(-60px, -10vw);
+    left: 15px;
+
+    object-fit: cover;
+  }
 `;
 
 export const ProfileData = styled.div`
@@ -71,6 +77,8 @@ export const ProfileData = styled.div`
     list-style: none;
     margin-top: 10px;
     margin-bottom: 10px;
+    
+    
 
     > li {
       font-size: 15px;

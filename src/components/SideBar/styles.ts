@@ -5,24 +5,34 @@ import { Search } from '../../styles/Icons';
 export const Container = styled.div`
   display: none;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1040px) {
     display: flex;
     flex-direction: column;
 
-    width: min(399px, 100%);
+    width: 399px;
+  }
+
+  @media (max-width: 1091px) {
+    width: 350px;
   }
 `;
 
 export const SearchWrapper = styled.div`
+
   padding: 10px 24px;
-  width: min(399px, 100%);
+  width: 399px;
 
   position: fixed;
+
   top: 0;
   z-index: 2;
   background: var(--primary);
 
   max-height: 57px;
+
+  @media (max-width: 1091px) {
+    width: 350px;
+  }
 `;
 
 export const SearchInput = styled.input`
